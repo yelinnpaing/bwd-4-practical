@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="color: blue; font-size: 50px;">Event Handling သင်ခန်းစာ</h1>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique tempore 
+        reiciendis sapiente tempora sed officia cumque accusantium nulla eius maxime 
+        eos possimus hic illo veniam, molestiae esse minus quia. Odio.
+    </p>
+
+    <img src="./d.jpg" alt="" height="200px" id="clickBtn">
+
+    <!-- <button onclick= btn()>Click</button> -->
+
+    <button id="clickBtn"> New Button </button>
+
+    <ul>
+        <li>Mango</li>
+        <li>orange</li>
+        <li>Apple</li>
+        <li>Grape</li>
+        <li>Banana</li>
+    </ul>
+
+    <ol>
+        <li>one</li>
+        <li>two</li>
+        <li>three</li>
+        <li>four</li>
+        <li>five</li>
+    </ol>
+    <script>
+
+        function btn(){
+            console.log ("I'm btn")
+        }
+
+        document.querySelector("#clickBtn").onclick =  function(){
+            btn();
+        }
+
+        document.querySelector("#clickBtn").addEventListener("click",function(){
+            btn();
+        })
+
+        document.querySelector("#clickBtn").addEventListener("dblclick",function(){
+            btn();
+        })
+        
+        document.querySelector("#clickBtn").addEventListener("mouseover",function(){
+            btn();
+        })
+
+        document.querySelector("#clickBtn").addEventListener("mouseout", function(){
+            btn();
+        })
+
+        document.addEventListener("keyup" ,function(){
+            console.log("I'm Keyup");
+        })
+
+        document.addEventListener("keypress" ,function(){
+            console.log("I'm Keypress");
+        })
+
+        document.addEventListener("keydown" ,function(){
+            console.log("I'm Keydown");
+        })
+
+
+
+    </script>
+</body>
+</html>

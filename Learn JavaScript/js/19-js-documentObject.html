@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1 id="header">Min Ga Lar Par</h1>
+
+    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum fuga, id cum tenetur ipsa, 
+        eligendi sint dolores architecto expedita voluptatem adipisci. Sunt minus sed rem voluptas 
+        deleniti unde necessitatibus temporibus. 
+    </P>
+
+    <input type = "text" id="inputText">
+
+    <button onclick="changeHeader()">Click</button>  //event
+
+    <ul id="list">
+        <li class="list-items">apple</li>
+        <li class="list-items">orange</li>
+        <li class="list-items">mango</li>
+    </ul>
+
+  
+    <script>
+
+        let i = document.getElementById("inputText");
+        let h = document.getElementById("header");
+
+        function changeHeader(){
+            let inputText = i.value;
+            h.innerText = inputText;
+
+        }
+
+        // // Select element
+        // let i = document.getElementById("inputText");
+        // let h = document.getElementById("header")
+
+        // function changeHeader(){
+        //     // Get text from Input
+        //     let inputText = i.value;
+
+        //     // set Text
+        //     h.innerText = inputText;
+        //     // console.log(inputText);
+        // }
+
+        
+        
+        // function changeHeader(){
+        //     console.log ()
+        // }
+
+        // let inputText = prompt("U R Header Name ?")
+        // document.getElementById("header").innerText = inputText;
+
+    </script>
+
+</body>
+</html>

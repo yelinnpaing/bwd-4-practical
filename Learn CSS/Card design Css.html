@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> 
+    <Style>
+        *{
+            font-family: 'Montserrat', sans-serif;
+            box-sizing: border-box;
+        }
+        body{
+            padding: 15px;
+            background-color: rgb(247, 245, 245);
+        }
+        .card{
+            /* border: 1px solid black; */
+            width: 300px;
+            border-radius: 10px;
+            display: inline-block;
+            margin-right: 7px;
+            overflow: hidden;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; ;
+        
+        }
+
+        .card-body{
+            padding: 15px;
+        }
+
+        .card-title{
+            margin-top: 0;
+            font-size: 20px;
+            font-weight: bold;
+
+        }
+
+        .card-paragraph{
+            margin-bottom: 0;
+            color: rgb(90, 89, 89);
+        }
+
+        .card-img{
+            width: 100%;
+            display: block;
+        }
+
+        .add-to-cart{
+            width: 40px;
+            height: 40px;
+            background-color: black;
+            color: white;
+            border-radius: 50%;
+            display: block;
+            margin-left: auto;
+            margin-top: -7%;
+            margin-right: 20px;
+            position: relative;
+
+        }
+
+        .see-more{
+            width: 150px;
+            height: 40px;
+            background-color: black;
+            color: white;
+            border-radius: 10%;
+            display: block;
+            margin-left: auto;
+            margin-bottom: -35px;
+            margin-right: auto;
+
+        }
+
+        .text-center{
+            text-align: center;
+        }
+
+        .text-right{
+            text-align: right;
+        }
+
+        .card-icon{
+            margin: 30px 0;
+           
+        }
+    </style>
+</head>
+    <body>
+        <div class="card">
+            <div class="card-body">
+                <p class="card-title">Min Ga Lar Par</p>
+                <p class="card-paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, nemo? Expedita modi a corrupti amet, maiores quaerat fugiat! In mollitia velit quis. Sint non ipsam ut nemo, sequi quo omnis.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-body text-center">
+                <p class="card-title">Min Ga Lar Par</p>
+                <p class="card-paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, nemo? Expedita modi a corrupti amet, maiores quaerat fugiat! In mollitia velit quis. Sint non ipsam ut nemo, sequi quo omnis.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-body text-right">
+                <p class="card-title">Min Ga Lar Par</p>
+                <p class="card-paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, nemo? Expedita modi a corrupti amet, maiores quaerat fugiat! In mollitia velit quis. Sint non ipsam ut nemo, sequi quo omnis.</p>
+            </div>
+        </div>
+
+        <br> <br> <br>
+
+        <div class="card">
+            <img src="./Nawpaw.pic/d.jpg" class="card-img" alt="">
+            <div class="card-body">
+                <p class="card-title">Naw Paw El Htar</p>
+                <p class="card-paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, nemo? Expedita modi a corrupti amet, maiores quaerat fugiat! In mollitia velit quis. Sint non ipsam ut nemo, sequi quo omnis.</p>
+            </div>
+        </div>
+
+        
+        <div class="card">
+            <div class="card-body">
+                <i class="card-icon fas fa-home fa-5x"></i>
+                <p class="card-title">Min Ga Lar Par</p>
+                <p class="card-paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, nemo? Expedita modi a corrupti amet, maiores quaerat fugiat! In mollitia velit quis. Sint non ipsam ut nemo, sequi quo omnis.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="./Nawpaw.pic/macbook.jpg" class="card-img" alt="">
+            <button class="add-to-cart fas fa-plus"></button>
+            <div class="card-body">
+                <p class="card-title">New Mackbook</p>
+                <p class="card-paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, nemo? Expedita modi a corrupti amet, maiores quaerat fugiat! In mollitia velit quis. Sint non ipsam ut nemo, sequi quo omnis.</p>
+            </div>
+        </div>
+
+        <div class="card text-center" style="overflow: visible;">
+            <div class="card-body">
+                <i class="card-icon fas fa-home fa-5x"></i>
+                <p class="card-title">Min Ga Lar Par</p>
+                <p class="card-paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, nemo? Expedita modi a corrupti amet, maiores quaerat fugiat! In mollitia velit quis. Sint non ipsam ut nemo, sequi quo omnis.</p>
+                <button class="see-more">See More</button>
+            </div>
+        </div>
+
+    </body>
+</html>

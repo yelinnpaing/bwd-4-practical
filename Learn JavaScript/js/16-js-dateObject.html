@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        // let d = new Date();
+
+        // console.log(d.getHours() + ":" + d.getMinutes());
+
+        // console.log (`${d.getDate()} / ${d.getMonth()} / ${d.getFullYear()}`);
+
+        let d = new Date()
+
+        console.log (d);
+
+        // let currentHour = d.getHours()
+
+        // d.setHours (currentHour + 300)
+
+        // console.log(d)
+
+        let currentMinute = d.getMinutes()
+        d.setMinutes(currentMinute+100)
+        console.log(d)
+
+        let currentMonth = d.getMonth()
+        d.setMonth (currentMonth+4)
+        console.log(d)
+
+        let totalHours = 50;
+        let dayPerHour = 2 ;
+        let totalDays = totalHours / dayPerHour ;
+        let currentDate = d.getDate()
+        d.setDate (currentDate+25)
+        console.log(d)
+
+
+
+
+    </script>
+
+   
+
+
+</body>
+</html>

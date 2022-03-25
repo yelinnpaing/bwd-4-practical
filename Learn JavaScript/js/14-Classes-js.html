@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        // let myself = {
+        //     // properties
+        //     name : "mg mg",
+        //     age : 26,
+        //     gf : "Naw Phaw",
+        
+        //     // methods
+        //     liveIn(){
+        //         return "live in Mandalay";
+            
+        //     },
+            
+        //     bdYear(){
+        //         return "I was born in 1995";
+        //     },
+        // };
+
+        // class Myself{
+
+        //     constructor (x,y){
+        //         // console.log ("I'm constructor------"+ x + "-----"+ y)
+        //         this.name = x
+
+        //     }
+
+            // properties
+            // name = "mg mg";
+        //     age = 26;
+        //     gf = "Naw Phaw";
+        
+        //     // methods
+        //     liveIn(){
+        //         return this.name + " live in Mandalay";
+            
+        //     }
+            
+        //     bdYear(){
+        //         return "I was born in 1995";
+        //     }
+        // }
+        
+        // let myself = new Myself("ccc", "aaa");  // Instantiate (classes -> Object)
+
+        // console.log (myself.name);
+        // console.log (myself.age);
+        // console.log (myself.bdYear());
+
+        class students {
+
+            constructor(name,age,address){
+             
+                    this.name = name
+                    this.age = age
+                    this.address = address
+
+            }
+            attendInBWD(){
+                return this.name + " learn in BWD"
+            }
+
+        }
+
+        let s1 = new students ("mg mg", "17", "mandalay");
+        let s2 = new students ("ko ko", "19", "yangon");
+        let s3 = new students ("nyo nyo", "21", "magway");
+        let s4 = new students ("mya mya", "14", "bago");
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;1,400&display=swap" rel="stylesheet">
+    <Style>
+        *{
+            font-family: 'Montserrat', sans-serif;
+        }
+        .list-1{
+            list-style-type: square;
+        }
+        .list-2{
+            border: 1px solid black;
+            /* padding-left: 0; */
+            list-style-type: none;
+            /* width: 200px; */
+            padding: 5px;
+            text-align: right;
+            margin-left: 30px;
+        }
+        .list-2 li{
+            border: 1px solid red;
+            padding: 10px 15px;
+            /* text-align: center; */
+            /* margin-bottom: 5px; */
+            /* width: 150px; */
+            display: inline-block;
+            /* margin: 0 5px; */
+            transition: 0.5s;
+        }
+        .list-2 li:last-child{
+            margin-bottom: 0px;
+           
+        }
+        .list-2 li:hover,.list-2 li.active{
+            background-color: blue;
+            color: white;
+        }
+        .list-3 li{
+            background-color: #dbdbdb;
+            color: black;
+            padding: 5px;
+            /* border-bottom: 5px; */
+            list-style-type: none;
+            width: 200px;
+            border-left: 1px solid green;
+            margin-bottom: 5px;
+            transition: 0.5s;
+            box-sizing: border-box;
+        }
+        /* .list-3 li:hover,.list-3 li.active{
+            background-color: blue;
+            color: white;
+        } */
+        .list-3 li:hover,.list-3 li.active{
+            border-left: 9px solid green;
+        }
+    </style>
+</head>
+<body>
+    <ul class="list-1">
+        <li>Apple</li>
+        <li>Orange</li>
+        <li>Pineapple</li>
+        <li>Grape</li>
+    </ul>
+    <br>
+    <ul class="list-2">
+        <li>Apple</li>
+        <li class="active">Orange</li>
+        <li>Pineapple</li>
+        <li>Grape</li>
+    </ul>
+    <br>
+    <ul class="list-3">
+        <li>Apple</li>
+        <li>Orange</li>
+        <li>Pineapple</li>
+        <li class="active">Grape</li>
+    </ul>
+</body>
+</html>

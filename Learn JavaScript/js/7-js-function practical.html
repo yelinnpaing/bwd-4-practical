@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         let record = [];
+         let index = 0;
+
+       function saverecord (w,b,r) {
+            record [index] = {
+                width:w,
+                breadth:b,
+                result:r
+            };
+            index++;
+        };
+
+        function calcArea (width,breadth){
+            let calc=(width*breadth);
+            let result = calc+" "+"sqft";
+            saverecord(width,breadth,result);
+            return result;
+        };
+
+        //Exchange Rates
+        let rates = {
+            usd:1636,
+            eru:1903,
+            sgd:1208,
+        }
+        //to mmk
+        function exchangeToMmk (amount,currency){
+            let calc = (amount * rates[currency]);
+            let result = calc+ " mmk"
+            return result;
+
+        }
+        //from mmk
+        function exchangeFromMmk (amount,currency){
+            let calc = (amount / rates[currency]);
+            let result = calc+ " "+ currency;
+            return result;
+
+        }
+
+        //Shopping
+
+        let fruitPrice = {
+            orange:200,
+            apple:500,
+            grape:400,
+        }
+        
+        function costTax (amount,percentage=5){
+            let costTax = (amount * percentage) / 100;
+            return costTax;
+        }
+
+        function calcCost(quantity,fruit){
+            let calcCost = (quantity * fruitPrice[fruit]);
+            let result = calcCost + " mmk"
+            return {
+                name: fruit,
+                unitPrice: fruitPrice[fruit],
+                quantity: quantity,
+                cost: calcCost,
+                tax: costTax(calcCost),
+                total: calcCost + costTax(calcCost),
+
+            };
+
+        }
+    </script>
+    Co
+</body>
+</html>

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="color: blue; font-size: 50px;">More About Event </h1>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique tempore 
+        reiciendis sapiente tempora sed officia cumque accusantium nulla eius maxime 
+        eos possimus hic illo veniam, molestiae esse minus quia. Odio.
+    </p>
+
+    <img src="./d.jpg" alt="" height="200px">
+
+    <a href="https://google.com" id="gg">Click to Google</a>
+
+    <!-- <button onclick= btn()>Click</button> -->
+
+    <!-- <button onclick= run(event) id="clickBtn"> New Button </button> -->
+
+    <button id="clickBtn"> New Button </button>
+
+
+    <ul>
+        <li>Mango</li>
+        <li>orange</li>
+        <li>Apple</li>
+        <li>Grape</li>
+        <li>Banana</li>
+    </ul>
+
+    <ol>
+        <li>one</li>
+        <li>two</li>
+        <li>three</li>
+        <li>four</li>
+        <li>five</li>
+    </ol>
+
+    <div>
+        <span>Name : </span>
+        <input type="text" id="inputText">
+    </div>
+
+    <div>
+        <label>Select Your Country</label>
+        <br>
+        <select name="country" id="country">
+        <option value="mm">Myanmar</option>
+        <option value="en">English</option>
+        <option value="kr">Korea</option>
+        <option value="jp">Japan</option>
+        </select>
+    </div>
+
+    <div>
+        <label>Choose</label>
+        <br>
+        <input type="file" type="photo[]" id="photo" multiple>
+    </div>
+    
+    <button type="submit" id="submit">Submit</button>
+  
+
+    <form action="" id="testForm">
+            <fieldset>
+                <legend>Test Form</legend>
+                <div class="mb-3">
+                    <label class="abc">Name</label>
+                    <br>
+                    <input type="text" name="name" id="name">
+                </div>
+                <div class="mb-3">
+                    <label>Weight</label>
+                    <br>
+                    <input type="number" name="weight" id="weight">
+                </div>
+                <div class="mb-3">
+                    <label>Date of Birdth</label>
+                    <br>
+                    <input type="date" name="bd" id="bd">
+                </div>
+                <div class="mb-3">
+                    <label>Photo</label>
+                    <br>
+                    <input type="file" name="photo[]" id="photo" multiple>
+                </div>
+            
+                <div class="mb-3">
+                    <label>Select Your Country</label>
+                    <br>
+                    <select name="country" id="country">
+                        <option value="mm">Myanmar</option>
+                        <option value="jp">Japan</option>
+                        <option value="kr">Korea</option>
+                        <option value="th">Thailand</option>
+                    </select>
+                </div>
+                <hr>
+                <button type="submit">Submit</button>
+            </fieldset>
+        </form>
+
+        <script>
+
+        function btn(){
+            console.log ("I'm btn")
+            
+        }
+
+        // function run(e){
+        //     console.log(e)
+        //     console.log ("I'm run")
+           
+        // }
+
+        // document.getElementById("gg").addEventListener("click", function(e){
+
+        //     e.preventDefault();
+
+        //     console.log(this.getAttribute("href"))
+        //     console.log(this.innerText)
+
+        //     console.log(e)
+        // })
+
+        // document.querySelector("ul").addEventListener("click",function(e){
+        //     console.log(e.target.innerText )
+        // })
+           
+
+        // document.querySelector("#clickBtn").onclick =  function(){
+        //     console.log(this.innerText)
+        //     btn();
+        // }
+
+            document.querySelector("#inputText").addEventListener("focus", function(){
+                console.log("I'm focus")
+            })
+
+            document.querySelector("#inputText").addEventListener("keyup", function(){
+                console.log(this.value)
+            })
+
+            document.querySelector("#inputText").addEventListener("blur", function(){
+                console.log("I'm blur")
+            })
+            
+            document.querySelector("#country").addEventListener("change", function(){
+                console.log(this.value)
+            })
+
+            document.querySelector("[type='file']").addEventListener("change", function(){
+                console.log(this.files)
+            })
+             
+
+            document.querySelector("#testForm").addEventListener("click", function(e){
+                e.preventDefault();
+                console.log("i'm prevent")
+            });
+
+            window.onload = function(){
+                console.log("I'm Onload");
+            }
+            console.log ("I'm last")
+
+            addEventListener("scroll", function(){
+                console.log(this.scrollY)
+                console.log("Ur Scroll")
+            })
+
+            document.addEventListener("mousemove", function(e){
+                console.log(e.clientX,e.clientY)
+                console.log("I'm mouseMove")
+            })
+            
+        // document.querySelector("#clickBtn").addEventListener("click",function(){
+        //     btn();
+        // })
+
+        // document.querySelector("#clickBtn").addEventListener("dblclick",function(){
+        //     btn();
+        // })
+        
+        // document.querySelector("#clickBtn").addEventListener("mouseover",function(){
+        //     btn();
+        // })
+
+        // document.querySelector("#clickBtn").addEventListener("mouseout", function(){
+        //     btn();
+        // })
+
+        // document.addEventListener("keyup" ,function(event){ 
+        //     if(event.keyCode == 13){
+        //         console.log(run())
+        //     }
+        //     console.log(event.key,event.keyCode);
+        // })
+
+        // document.addEventListener("keypress" ,function(){
+        //     console.log("I'm Keypress");
+        // })
+
+        // document.addEventListener("keydown" ,function(){
+        //     console.log("I'm Keydown");
+        // })
+
+
+
+    </script>
+</body>
+</html>

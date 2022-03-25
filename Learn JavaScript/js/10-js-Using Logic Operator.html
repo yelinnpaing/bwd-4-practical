@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let case1 = 65;
+        let case2 = 70;
+
+        if (case1>60 && case2>60){
+            console.log ("ကျောင်းဝင်ခွင့် ရရှိသည်");
+        };
+
+        let id = "citizen";
+        let age = 15;
+
+        if (id == "citizen" && age == 18){
+            console.log ("မဲပေးခွင့် ရရှိသည်");
+        }else{
+            console.log("မဲပေးခွင့် မရ ရှိပါ");
+        };
+
+
+
+        let busNo = 40;
+        
+        if (busNo == 65 || busNo == 20){
+            console.log (`YBS ${busNo} ဖြင့် ကျောင်းလာလို့ ရပါသည်`);
+        }else{
+            console.log (`YBS ${busNo} ဖြင့် ကျောင်းလာလို့ မရပါ`);
+        };
+
+        
+        let x;
+        if(!true){
+            console.log("I,m true");
+            x=5;
+        }else{
+            console.log("I'm false");
+            x=2;
+        }
+        console.log(x);
+
+        function result (mark){
+           
+
+            if (mark<40){
+                return "fail";
+            }else if (mark>=80){
+                return "D plus";
+            }else if (mark>40){
+                return "pass";
+            }
+                return "Fill Only Number";
+            
+                
+        }
+
+    </script>
+</body>
+</html>

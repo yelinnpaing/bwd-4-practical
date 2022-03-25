@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        //hosting
+        console.log(b);
+
+        // let a = 5;
+        // console.log("Mingalar Par");
+
+        //function statement
+        function    aa(){
+            // console.log(name);
+            return "This is Aa";
+            
+
+        }
+
+        //function expression
+        let Run = function(){
+            return (aa())+" and "+ "this is Run";
+        };
+
+        //this is IIFE
+        // (function (){
+        //     console.log ("this is IIFE");
+        // })()
+
+        let a = "a is Alpha";
+        var b = "b is also Belta";
+
+        // console.log(Run());
+
+        //block Scope
+        {
+            let a = "a is Alpha";
+            var b = "b is also Belta";
+        }
+
+        // console.log(a); 
+        //Block Scope ထဲမှာ ရှိတာကို သုံးချင်ရင် Var နဲ့ ကြေငြာတာကိုပဲ သုံးလို့ ရတယ်။
+        console.log(b);
+        
+
+        //local Scope
+        function  cc()
+        {
+            let a = "a is Alpha";
+            let b = "b is also Belta";
+        
+            console.log(a);
+            console.log(b);
+            console.log(name);
+            return  "cc";
+        }
+
+       // GlobalScope
+       let name = "Mg Mg";
+    </script>
+
+</body>
+</html>

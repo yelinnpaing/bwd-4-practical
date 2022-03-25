@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;1,400&display=swap" rel="stylesheet">
+    <Style>
+        *{
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .title{
+            color: blue;
+            font-size: 30px;
+        }
+
+        /* child selector */
+
+        .title span{
+            color: black;
+        }
+
+        thead{
+            background-color: hotpink;
+            color: black;
+        }
+
+        thead th{
+            text-align: left;
+        }
+        
+        tbody tr td:first-child{
+            background-color: rgb(252, 168, 210);
+        }
+
+        .text-right{
+            text-align: right;
+        }
+
+        .last{
+            text-align: right;
+            font-weight: bold;
+            background-color: white !important ; 
+        }
+
+        tbody tr:hover{
+            background-color:#eee;
+            
+        }
+
+        tbody td{
+            color: blue;
+        }
+
+        table{
+            border-collapse: collapse;
+            width: 100%;
+            font-size: 15px;
+
+         }
+
+        tr{
+            /* border-bottom: 1px solid black; */
+
+        }
+
+        td,th{
+           border: 1px solid black;
+            padding: 5px 5px;
+
+        }
+   
+    </Style>
+    
+
+</head>
+
+   <body>
+       <h4 class="title">Table <span>CSS</span></h4>
+       
+            <table>
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th class="text-right">Name</th>
+                        <th class="text-right">Age</th>
+                        <th class="text-right">Address</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td class="text-right">Apple</td>
+                        <td class="text-right" >10</td>
+                        <td class="text-right">Yangon</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td class="text-right">Orange</td>
+                        <td class="text-right">12</td>
+                        <td class="text-right">Mandalay</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td class="text-right">Mango</td>
+                        <td class="text-right">9</td>
+                        <td class="text-right">Bago</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td class="text-right">Grape</td>
+                        <td class="text-right">8</td>
+                        <td class="text-right">Magway</td>
+                    </tr>
+                    <tr>
+                        <td class="last" colspan="2" >Type</td>
+                        <td class="last" >Total Age</td>
+                        <td class="last" >Confirm</td>
+                    </tr>
+                </tbody>
+         </table>
+
+</html>

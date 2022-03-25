@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #resultAnswer{
+            display:inline-block;
+            width: 100px;
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div> First Number
+        <input type="number" id="a" >
+    </div>
+    <div> Second Number
+        <input type="number" id="b" >
+    </div>
+    <hr>
+    <span>Answer :</span>
+    <span id="resultAnswer"></span>
+    <input type="button" value="button" onclick=sumAB()>
+
+    <script>
+
+        let a = document.getElementById("a");
+        let b = document.getElementById("b");
+        let r = document.getElementById("resultAnswer");
+        function sumAB(){
+            r.innerText = (a.valueAsNumber + b.valueAsNumber)
+            a.value = b.value = "";
+
+        }
+    </script>
+
+</body>
+</html>

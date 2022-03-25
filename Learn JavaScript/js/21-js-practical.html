@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #massResult{
+            display: inline-block;
+            width: 450px;
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <span>Total Mass : </span>
+        <span id="massResult"></span>
+        <button onclick=listSave()>Save</button>
+        <button onclick=clearResult()>Clear</button>
+    </div>
+    <br>
+    <div>
+        <input type="number" id="length" placeholder="Length"  >
+        <input type="number" id="width" placeholder="Width">
+        <input type="number" id="height" placeholder="Height">
+        <input type="button" value="Calculate" onclick=calculateMass()>
+    </div>
+    <ul id="list">
+        <li>qwe</li>
+    </ul>
+
+    <script>
+
+        let l = document.getElementById("length");
+        let w = document.getElementById("width");
+        let h = document.getElementById("height");
+        let mr = document.getElementById("massResult");
+
+        function    calculateMass(){
+            if (l.value == "" || w.value == "" || h.value == ""){
+                alert("Please Input Number")
+            }else{
+                let m = l.value * w.value * h.value;
+                // console.log (m)
+                mr.innerHTML = `${l.value}m x ${w.value}m x ${h.value}m = ${m}m <sup>3</sup>`;
+                l.value ="";
+                w.value = "";
+                h.value = "";
+            }
+           
+        };
+
+        function listSave(){
+            if (mr.innerHTML == ""){
+                alert("No Result calculateMass")
+            }else{
+                list.innerHTML += `<li>${mr.innerHTML}</li>`; 
+                clearResult();
+            }
+           
+        }
+    
+        function clearResult(){
+            mr.innerHTML = "";
+        }
+
+    </script>
+   
+</body>
+</html>

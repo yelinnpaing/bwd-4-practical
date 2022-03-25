@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            height: 3000px;
+            width: 1500px;
+        }
+
+        img{
+            width: 200px;
+        }
+
+    </style>
+</head>
+<body>
+
+   <img src="https://elevenmyanmar.com/sites/news-eleven.com/files/styles/news_detail_image/public/news-images/npeh2_0.jpg?itok=u67Irf5z" alt="">;
+    <img src="https://elevenmyanmar.com/sites/news-eleven.com/files/styles/content_image_full_width/public/media/npeh.jpg?itok=0NWBEXHs" alt="">;
+    
+    
+    <button onclick="clearInterval(myControl)">Stop</button>
+
+    <button onclick=" history.forward()">back</button>
+
+    <script>
+
+        // window.addEventListener("scroll" , _=> console.log (pageXOffset));
+        // window.addEventListener("resize", _=> console.log(innerWidth, innerHeight));
+
+        // console.log("a");
+        // console.log("b");
+        // console.log("c");
+
+        // window.addEventListener("load", _=> console.log("Load Finish"));
+
+        let a = 1;
+
+        function run(){
+            console.log ("This is Run" + a++);
+        }
+
+        let myControl = setInterval(run,1000);
+
+        let batteryIsCharging = false;
+
+        navigator.getBattery().then(function(battery) {
+        batteryIsCharging = battery.charging;
+
+        battery.addEventListener('chargingchange', function() {
+            batteryIsCharging = battery.charging;
+        });
+        });
+        
+
+        navigator.getBattery()
+        .then(function(battery) {
+            console.log(battery.level + " %");
+        });
+
+
+
+
+    </script>
+
+</body>
+</html>
